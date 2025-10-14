@@ -31,6 +31,10 @@ so far it mainly has:
 > * dur patches out some bugs or code of poor quality
 > * non-binary pkgs or small pkgs might not be in dur
 
+## What to note
+
+* to use `wine`, install `wine-mono` from https://archive.archlinux.org/packages/w/wine-mono/wine-mono-10.0.0-1-x86_64.pkg.tar.zst and hold it in `pacman.conf`
+
 ## FIXME/TODOs
 
 * currently `wine` needs to be manually held in `pacman.conf` and pkgname is still `wine` instead of `wine32`
