@@ -5,6 +5,14 @@ yet another binary repo of aur pkgs
 
 currently only x86_64 is supported
 
+## For who
+
+* stock wine gaming mainly Japanese VNs
+* software development of multiple stacks
+* KDE desktop users
+
+## What's included
+
 so far it mainly has:
 
 * `lib32-` pkgs needed by wine or AOSP build
@@ -22,6 +30,8 @@ so far it mainly has:
 > * pkgs might not be the latest (updated when dependency breaks, or when i figured out i need a newer version)
 > * dur patches out some bugs or code of poor quality
 
+## Usage
+
 to use dur, add these into your `/etc/pacman.conf`:
 
 ```ini
@@ -31,6 +41,8 @@ Server = https://random-mirrors.d0ve.workers.dev/0:/dur/
 ```
 
 ## Patched AUR pkgs
+
+(occasional compilation fixes are quick to me and thus not uploaded to github)
 
 | name | PKGBUILD repo url |
 | --- | --- |
