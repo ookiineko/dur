@@ -30,6 +30,7 @@ so far it mainly has:
 > * dur pkgs are updated when i feel upgrading my system
 > * pkg tests are not executed, debug info for host pkgs are removed
 > * pkgs might be added or removed over time
+> * pkgvers might be different from AUR
 > * pkgs might not be the latest (updated when dependency breaks, or when i figured out i need a newer version)
 > * dur patches out some bugs or code of poor quality
 > * non-binary pkgs or small pkgs might not be in dur
@@ -60,7 +61,7 @@ Server = https://random-mirrors.d0ve.workers.dev/0:/dur/
 
 ### Notes for qt6-wasm
 
-WebAssembly plugin needs to be enabled in Qt Creator, and you should add the Kit in settings manually. to avoid getting "compiler might not generate compatible code", select the same compiler associated with the Qt installation instead of creating one manually
+WebAssembly plugin needs to be enabled in Qt Creator, and you should add the Kit in settings manually. to avoid getting "compiler might not generate compatible code", select the same compiler associated with the Qt installation instead of creating one manually; create a webassembly run device if one don't exist already
 
 ### Notes for wine
 
@@ -82,6 +83,10 @@ to run a shared build of Qt application using wine, you can use `mingw-w64-wine`
 
 to compile a statically linked Qt application, simply use `mingw-w64-cmake-static`
 
+#### Qt Creator
+
+to use this toolchain in Qt Creator you need to manually select the CMake wrappers, and add Qt version by selecting `qmake6` in `[mingw target sysroot]/lib/qt6/bin`. run button only work with static Kit due to `QT_PLUGIN_PATH` cannot be easily set
+
 ## Packages with old versions
 
 | name | reason |
@@ -97,7 +102,8 @@ to compile a statically linked Qt application, simply use `mingw-w64-cmake-stati
 | `wine` | https://github.com/ookiineko/wine-PKGBUILD | reverted arch commit that enabled WoW64, 2 upstream commits reverted to fix inetcpl.cpl regression (crashing when trying to modify proxy configurations) |
 | `mingw-w64-zstd` | https://github.com/ookiineko/mingw-w64-zstd-PKGBUILD | build static library and `zstd.exe` executable, just like other `mingw-w64-` pkgs |
 | `mingw-w64-brotli` | https://github.com/ookiineko/mingw-w64-brotli-PKGBUILD | removed unnecessary `/usr/[mingw target]/static` bcs it isnt standard |
-| `mingw-w64-cmake-static` | https://github.com/ookiineko/mingw-w64-cmake-static-PKGBUILD | fixed upstream typo in sqlite library path, replaced hacks for overriding `CMAKE_FIND_LIBRARY_SUFFIXES` with a better one |
+| `mingw-w64-cmake` | https://github.com/ookiineko/mingw-w64-cmake-PKGBUILD | make it work in Qt Creator |
+| `mingw-w64-cmake-static` | https://github.com/ookiineko/mingw-w64-cmake-static-PKGBUILD | fixed upstream typo in sqlite library path, replaced hacks for overriding `CMAKE_FIND_LIBRARY_SUFFIXES` with a better one; make it work within Qt Creator |
 | `mingw-w64-qt6-base` | https://github.com/ookiineko/mingw-w64-qt6-base-PKGBUILD | dropped unused patches ¯\\\_(ツ)\_/¯ |
 | `mingw-w64-qt6-base-static` | https://github.com/ookiineko/mingw-w64-qt6-base-static-PKGBUILD | dropped unused patches; removed `CMAKE_FIND_LIBRARY_SUFFIXES` hack (no longer needed); simplified hack for preferring `libzstd_static` |
 
