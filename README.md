@@ -95,3 +95,7 @@ to run a shared build of Qt application using wine, you can use `mingw-w64-wine`
 | `mingw-w64-brotli` | https://github.com/ookiineko/mingw-w64-brotli-PKGBUILD | removed unnecessary `/usr/[mingw target]/static` bcs it isnt standard |
 | `mingw-w64-cmake-static` | https://github.com/ookiineko/mingw-w64-cmake-static-PKGBUILD | fixed upstream typo in sqlite library path, replaced hacks for overriding `CMAKE_FIND_LIBRARY_SUFFIXES` with a better one |
 | `mingw-w64-qt6-base` | https://github.com/ookiineko/mingw-w64-qt6-base-PKGBUILD | dropped unused patches ¯\\\_(ツ)\_/¯ |
+
+## Get help
+
+i might have missed something or i might have made some assumption of my own device accidentally, if a pkg dont work or u dont know how to use u can issue a ticket on github
