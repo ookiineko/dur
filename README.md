@@ -35,6 +35,7 @@ so far it mainly has:
 > * dur patches out some bugs or code of poor quality
 > * non-binary pkgs or small pkgs might not be in dur
 > * pkg doc might be disabled to speed up build
+> * `makepkg.conf` used by dur is somewhat older than stock
 
 ## What to note
 
