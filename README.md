@@ -46,6 +46,9 @@ so far it mainly has:
 
 ## Usage
 
+> [!IMPORTANT]
+> if you use dur, you probably should not report bugs to upstream unless you know what you are doing
+
 to use dur, add these into your `/etc/pacman.conf`:
 
 > [!WARNING]
