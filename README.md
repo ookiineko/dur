@@ -43,6 +43,8 @@ so far it mainly has:
 ## FIXME/TODOs
 
 * currently `wine` needs to be manually held in `pacman.conf` and pkgname is still `wine` instead of `wine32`
+* potentially broken pkg-config with `mingw-w64-cmake-static`? (upstream issue) solution exist (i guess) but need verification
+* need a better `mingw-w64-wine` wrapper so `QT_PLUGIN_PATH` can be set automatically
 
 ## Usage
 
