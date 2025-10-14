@@ -56,6 +56,10 @@ Server = https://random-mirrors.d0ve.workers.dev/0:/dur/
 
 (for now, distribution is backed/powered by google drive and goindex)
 
+### Notes for qt6-wasm
+
+WebAssembly plugin needs to be enabled in Qt Creator, and you should add the Kit in settings manually. to avoid getting "compiler might not generate compatible code", select the same compiler associated with the Qt installation instead of creating one manually
+
 ### Notes for wine
 
 if Chinese/Japanese characters don't display properly, install the fonts
