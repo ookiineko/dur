@@ -31,6 +31,10 @@ so far it mainly has:
 > * dur patches out some bugs or code of poor quality
 > * non-binary pkgs or small pkgs might not be in dur
 
+## FIXME/TODOs
+
+* currently `wine` needs to be manually held in `pacman.conf` and pkgname is still `wine` instead of `wine32`
+
 ## Usage
 
 to use dur, add these into your `/etc/pacman.conf`:
