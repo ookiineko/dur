@@ -1,0 +1,28 @@
+dropout user repository (dur)
+=============================
+
+yet another binary repo of aur pkgs
+
+so far it mainly has:
+
+* `lib32-` pkgs needed by wine or AOSP build
+* non-WoW64 build of a stable pinned ver of wine
+* `qt6-wasm`
+* Qt Widgets and its dependencies for arch MinGW toolchain
+* `wget2`
+* `java-language-server-git`
+* `koi`
+* could be some others that i personally use
+
+> [!NOTE]
+> * pkgs might be added or removed over time
+> * pkgs might not be the latest (updated when dependency breaks, or when i figured out i need a newer version)
+> * dur patches out some bugs or code of poor quality
+
+to use dur, add these into your `/etc/pacman.conf`:
+
+```ini
+[dur]
+SigLevel = Optional
+Server = https://random-mirrors.d0ve.workers.dev/0:/dur/
+```
