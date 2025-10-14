@@ -29,6 +29,7 @@ so far it mainly has:
 > * pkgs might be added or removed over time
 > * pkgs might not be the latest (updated when dependency breaks, or when i figured out i need a newer version)
 > * dur patches out some bugs or code of poor quality
+> * non-binary pkgs or small pkgs might not be in dur
 
 ## Usage
 
