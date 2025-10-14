@@ -53,9 +53,9 @@ Server = https://random-mirrors.d0ve.workers.dev/0:/dur/
 
 (occasional compilation fixes are quick to me and thus not uploaded to github)
 
-| name | PKGBUILD repo url |
-| --- | --- |
-| `wine` | https://github.com/ookiineko/wine-PKGBUILD |
-| `mingw-w64-zstd` | https://github.com/ookiineko/mingw-w64-zstd-PKGBUILD |
-| `mingw-w64-brotli` | https://github.com/ookiineko/mingw-w64-brotli-PKGBUILD |
-| `mingw-w64-cmake-static` | https://github.com/ookiineko/mingw-w64-cmake-static-PKGBUILD |
+| name | PKGBUILD repo url | what's changed |
+| --- | --- | --- |
+| `wine` | https://github.com/ookiineko/wine-PKGBUILD | reverted arch commit that enabled WoW64, 2 upstream commits reverted to fix inetcpl.cpl regression (crashing when trying to modify proxy configurations) |
+| `mingw-w64-zstd` | https://github.com/ookiineko/mingw-w64-zstd-PKGBUILD | build static library and `zstd.exe` executable |
+| `mingw-w64-brotli` | https://github.com/ookiineko/mingw-w64-brotli-PKGBUILD | removed unnecessary `/usr/[mingw target]/static` |
+| `mingw-w64-cmake-static` | https://github.com/ookiineko/mingw-w64-cmake-static-PKGBUILD | fixed upstream typo in sqlite library path, replaced hacks for overriding `CMAKE_FIND_LIBRARY_SUFFIXES` with a better one |
