@@ -56,6 +56,20 @@ Server = https://random-mirrors.d0ve.workers.dev/0:/dur/
 
 (for now, distribution is backed/powered by google drive and goindex)
 
+### Notes for wine
+
+if Chinese/Japanese characters don't display properly, install the fonts
+
+if videos inside games doesn't playback, install windows media player
+
+```shell
+winetricks cjkfonts wmp9
+```
+
+### Notes for mingw-w64-qt6-base
+
+to run a shared build of Qt application using wine, you can use `mingw-w64-wine` or set `WINEPATH` to bindir manually. you will also need to set `QT_PLUGIN_PATH` to `[mingw target sysroot]/lib/qt6/plugins`, but here is a gotcha, wine will filter `QT_*` envvars, a workaround is to use `env` applet in `busybox` installed from `winetricks` to launch
+
 ## Packages with old versions
 
 | name | reason |
