@@ -62,6 +62,8 @@ WebAssembly plugin needs to be enabled in Qt Creator, and you should add the Kit
 
 ### Notes for wine
 
+use this command to open Internet Options if you need to set a proxy server: `wine rundll32.exe shell32.dll,Control_RunDLL inetcpl.cpl,,2`
+
 if Chinese/Japanese characters don't display properly, install the fonts
 
 if videos inside games doesn't playback, install windows media player
