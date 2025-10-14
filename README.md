@@ -3,6 +3,8 @@ dropout user repository (dur)
 
 yet another binary repo of aur pkgs
 
+it does just that, dur tries to follow the general common sense in archlinux and generally does not introduce extra random / personal feature, but focus on usefulness and availiability
+
 currently only x86_64 is supported
 
 ## For who
