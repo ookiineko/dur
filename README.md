@@ -76,6 +76,10 @@ winetricks cjkfonts wmp9
 
 to run a shared build of Qt application using wine, you can use `mingw-w64-wine` or set `WINEPATH` to bindir manually. you will also need to set `QT_PLUGIN_PATH` to `[mingw target sysroot]/lib/qt6/plugins`, but here is a gotcha, wine will filter `QT_*` envvars, a workaround is to use `env` applet in `busybox` installed from `winetricks` to launch
 
+#### Static build
+
+to compile a statically linked Qt application, simply use `mingw-w64-cmake-static`
+
 ## Packages with old versions
 
 | name | reason |
@@ -93,6 +97,7 @@ to run a shared build of Qt application using wine, you can use `mingw-w64-wine`
 | `mingw-w64-brotli` | https://github.com/ookiineko/mingw-w64-brotli-PKGBUILD | removed unnecessary `/usr/[mingw target]/static` bcs it isnt standard |
 | `mingw-w64-cmake-static` | https://github.com/ookiineko/mingw-w64-cmake-static-PKGBUILD | fixed upstream typo in sqlite library path, replaced hacks for overriding `CMAKE_FIND_LIBRARY_SUFFIXES` with a better one |
 | `mingw-w64-qt6-base` | https://github.com/ookiineko/mingw-w64-qt6-base-PKGBUILD | dropped unused patches ¯\\\_(ツ)\_/¯ |
+| `mingw-w64-qt6-base-static` | https://github.com/ookiineko/mingw-w64-qt6-base-static-PKGBUILD | dropped unused patches; removed `CMAKE_FIND_LIBRARY_SUFFIXES` hack (no longer needed); simplified hack for preferring `libzstd_static` |
 
 ## Get help
 
