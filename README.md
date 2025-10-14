@@ -3,6 +3,8 @@ dropout user repository (dur)
 
 yet another binary repo of aur pkgs
 
+currently only x86_64 is supported
+
 so far it mainly has:
 
 * `lib32-` pkgs needed by wine or AOSP build
@@ -15,6 +17,7 @@ so far it mainly has:
 * could be some others that i personally use
 
 > [!NOTE]
+> * dur pkgs are updated when i feel upgrading my system
 > * pkgs might be added or removed over time
 > * pkgs might not be the latest (updated when dependency breaks, or when i figured out i need a newer version)
 > * dur patches out some bugs or code of poor quality
