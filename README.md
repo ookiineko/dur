@@ -43,11 +43,16 @@ so far it mainly has:
 
 to use dur, add these into your `/etc/pacman.conf`:
 
+> [!WARNING]
+> pkgs are not signed. do not use HTTP, following example is HTTPS
+
 ```ini
 [dur]
 SigLevel = Optional
 Server = https://random-mirrors.d0ve.workers.dev/0:/dur/
 ```
+
+(for now, distribution is backed/powered by google drive and goindex)
 
 ## Packages with old versions
 
