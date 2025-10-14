@@ -26,3 +26,12 @@ to use dur, add these into your `/etc/pacman.conf`:
 SigLevel = Optional
 Server = https://random-mirrors.d0ve.workers.dev/0:/dur/
 ```
+
+## Patched AUR pkgs
+
+| name | PKGBUILD repo url |
+| --- | --- |
+| `wine` | https://github.com/ookiineko/wine-PKGBUILD |
+| `mingw-w64-zstd` | https://github.com/ookiineko/mingw-w64-zstd-PKGBUILD |
+| `mingw-w64-brotli` | https://github.com/ookiineko/mingw-w64-brotli-PKGBUILD |
+| `mingw-w64-cmake-static` | https://github.com/ookiineko/mingw-w64-cmake-static-PKGBUILD |
