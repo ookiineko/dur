@@ -49,6 +49,12 @@ SigLevel = Optional
 Server = https://random-mirrors.d0ve.workers.dev/0:/dur/
 ```
 
+## Packages with old versions
+
+| name | reason |
+| --- | --- |
+| `wine` | attempt to upgrade to 10.15 breaks Unity games completely (???) |
+
 ## Patched AUR pkgs
 
 (occasional compilation fixes are quick to me and thus not uploaded to github)
