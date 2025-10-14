@@ -28,10 +28,12 @@ so far it mainly has:
 
 > [!NOTE]
 > * dur pkgs are updated when i feel upgrading my system
+> * pkg tests are not executed, debug info for host pkgs are removed
 > * pkgs might be added or removed over time
 > * pkgs might not be the latest (updated when dependency breaks, or when i figured out i need a newer version)
 > * dur patches out some bugs or code of poor quality
 > * non-binary pkgs or small pkgs might not be in dur
+> * pkg doc might be disabled to speed up build
 
 ## What to note
 
