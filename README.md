@@ -72,3 +72,4 @@ Server = https://random-mirrors.d0ve.workers.dev/0:/dur/
 | `mingw-w64-zstd` | https://github.com/ookiineko/mingw-w64-zstd-PKGBUILD | build static library and `zstd.exe` executable, just like other `mingw-w64-` pkgs |
 | `mingw-w64-brotli` | https://github.com/ookiineko/mingw-w64-brotli-PKGBUILD | removed unnecessary `/usr/[mingw target]/static` bcs it isnt standard |
 | `mingw-w64-cmake-static` | https://github.com/ookiineko/mingw-w64-cmake-static-PKGBUILD | fixed upstream typo in sqlite library path, replaced hacks for overriding `CMAKE_FIND_LIBRARY_SUFFIXES` with a better one |
+| `mingw-w64-qt6-base` | https://github.com/ookiineko/mingw-w64-qt6-base-PKGBUILD | dropped unused patches ¯\\\_(ツ)\_/¯ |
